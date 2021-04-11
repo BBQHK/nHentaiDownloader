@@ -33,7 +33,6 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
         print()
 
 url = input("Please input URL (e.g. https://nhentai.net/g/344197/): ")
-# os.mkdir('img')
 response = requests.get(url)
 
 if response.status_code == requests.codes.ok:
