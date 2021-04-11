@@ -14,9 +14,9 @@ Manga downloader is a CLI tool for downloading doujinshi from nHentai
 py nHentaiDownloader.py
 ```
 ![image](https://user-images.githubusercontent.com/43085343/114311737-822b4800-9b22-11eb-9c03-ac3ba0e2682c.png)
-Input the link of the manga you need to download.
+Input the link of the doujinshi you need to download, and then wait for it to download.
 ![image](https://user-images.githubusercontent.com/43085343/114312094-fca89780-9b23-11eb-8b82-4f91371f1f82.png)
-
+When the doujinshi download is complete, you can see the doujinshi in folder created by nHentai Downloader.
 ![image](https://user-images.githubusercontent.com/43085343/114312290-ca4b6a00-9b24-11eb-850e-e4daf5c8a146.png)
 
 ![nHentai_img](https://static.nhentai.net/img/logo.090da3be7b51.svg)
