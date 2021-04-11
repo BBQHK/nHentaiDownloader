@@ -15,4 +15,8 @@ py nHentaiDownloader.py
 ```
 ![image](https://user-images.githubusercontent.com/43085343/114311737-822b4800-9b22-11eb-9c03-ac3ba0e2682c.png)
 
+![image](https://user-images.githubusercontent.com/43085343/114312094-fca89780-9b23-11eb-8b82-4f91371f1f82.png)
+
+![image](https://user-images.githubusercontent.com/43085343/114312290-ca4b6a00-9b24-11eb-850e-e4daf5c8a146.png)
+
 ![nHentai_img](https://static.nhentai.net/img/logo.090da3be7b51.svg)
