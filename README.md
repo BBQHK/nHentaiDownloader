@@ -1,5 +1,5 @@
 # nHentaiDownloader
-Manga downloader for nHentai.
+Manga downloader is a CLI tool for downloading doujinshi from nHentai
 
 ```
        _    _            _        _ _____                      _                 _           
