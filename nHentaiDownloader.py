@@ -7,8 +7,7 @@ print('       | |  | |          | |      (_) |  __ \                    | |     
 print('  _ __ | |__| | ___ _ __ | |_ __ _ _  | |  | | _____      ___ __ | | ___   __ _  __| | ___ _ __ ')
 print(' | \'_ \|  __  |/ _ \ \'_ \| __/ _` | | | |  | |/ _ \ \ /\ / / \'_ \| |/ _ \ / _` |/ _` |/ _ \ \'__|')
 print(' | | | | |  | |  __/ | | | || (_| | | | |__| | (_) \ V  V /| | | | | (_) | (_| | (_| |  __/ |   ')
-print(' |_| |_|_|  |_|\___|_| |_|\__\__,_|_| |_____/ \___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|\___|_|   ver0.1')
-print()
+print(' |_| |_|_|  |_|\___|_| |_|\__\__,_|_| |_____/ \___/ \_/\_/ |_| |_|_|\___/ \__,_|\__,_|\___|_|   ver0.1\n')
 
 # Print iterations progress
 def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', printEnd = "\r"):
@@ -39,27 +38,27 @@ if response.status_code == requests.codes.ok:
     soup = BeautifulSoup(response.text, 'html.parser')
     comicTitle = soup.find('h2', class_ = 'title')
     comicTitle = comicTitle.find('span', class_ = 'pretty').getText()
-    
+
     print('Title: ' + comicTitle)
     imggalleryURL = soup.find_all('a', class_='gallerythumb')
     page = len(imggalleryURL)
     imggalleryURL = imggalleryURL[0].find('img').get('data-src')[:-6]
     imggalleryURL = imggalleryURL[imggalleryURL.find('.'):]
-    
+
     try:
         os.mkdir(comicTitle)
     except:
         pass
-        
+
     print('Processing...')
     printProgressBar(0, page, prefix = 'Progress:', suffix = 'Complete', length = 50)
     
     for i in range(page + 1):
-        imgURL = "https://i" + imggalleryURL + str(i) + ".jpg"
+        imgURL = f"https://i{imggalleryURL}{str(i)}.jpg"
 
         response = requests.get(imgURL)
         if response.status_code == 200:
-            with open(".\\"+ comicTitle + "\\"+ str(i) + ".jpg", 'wb') as f:
+            with open(f"{os.getcwd()}/{comicTitle}/.\\{comicTitle}\\{str(i)}.jpg", 'wb') as f:
                 f.write(response.content)
         printProgressBar(i, page, prefix = 'Progress:', suffix = 'Complete', length = 50)
     print('Finish!!')
