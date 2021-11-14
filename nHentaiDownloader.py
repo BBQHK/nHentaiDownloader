@@ -58,7 +58,7 @@ if response.status_code == requests.codes.ok:
 
         response = requests.get(imgURL)
         if response.status_code == 200:
-            with open(f"{os.getcwd()}/{comicTitle}/.\\{comicTitle}\\{str(i)}.jpg", 'wb') as f:
+            with open(f"{os.getcwd()}/{comicTitle}/{str(i)}.jpg", 'wb') as f:
                 f.write(response.content)
         printProgressBar(i, page, prefix = 'Progress:', suffix = 'Complete', length = 50)
     print('Finish!!')
