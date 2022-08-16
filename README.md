@@ -19,4 +19,4 @@ Input the link of the doujinshi you need to download, and then wait for it to do
 When the doujinshi download is complete, you can see the doujinshi in folder created by nHentai Downloader.
 ![image](https://user-images.githubusercontent.com/43085343/114312290-ca4b6a00-9b24-11eb-850e-e4daf5c8a146.png)
 
-![nHentai_img](https://static.nhentai.net/img/logo.090da3be7b51.svg)
+![image](https://bbqhk.github.io/img/nhentai_logo.png)
